@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>حقوق المستخدم وحذف البيانات | User Data Rights & Data Deletion — مدون الحسابات الذكي</title>
+  <meta name="description" content="سياسة وحقوق المستخدم في التحكم بالبيانات وحذفها لتطبيق مدون الحسابات الذكي - User Data Rights and Data Deletion Policy for Smart Account Ledger">
+  <style>
+    :root {
+      --primary: #1976d2;
+      --primary-dark: #0d47a1;
+      --primary-light: #e3f2fd;
+      --text: #263238;
+      --text-muted: #546e7a;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --accent: #2e7d32;
+      --accent-light: #e8f5e9;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Arabic", "Cairo", Tahoma, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .nav-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .nav-toggle a {
+      display: inline-block;
+      padding: 8px 18px;
+      background: #f1f5f9;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+
+    .nav-toggle a:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 19px;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--primary-light);
+    }
+
+    .ltr-block {
+      direction: ltr;
+      text-align: left;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .ltr-block .section-title {
+      border-bottom: 2px solid var(--primary-light);
+    }
+
+    h2 {
+      font-size: 17px;
+      color: var(--text);
+      margin: 18px 0 8px 0;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 8px 24px 16px 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .highlight-box {
+      background: var(--primary-light);
+      border-right: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+
+    .ltr-block .highlight-box {
+      border-right: none;
+      border-left: 4px solid var(--primary);
+    }
+
+    .success-box {
+      background: var(--accent-light);
+      border-right: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+
+    .ltr-block .success-box {
+      border-right: none;
+      border-left: 4px solid var(--accent);
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .contact-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: #e3f2fd;
+      font-size: 14.5px;
+      margin-bottom: 14px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--primary-dark);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 15px;
+      direction: ltr;
+      unicode-bidi: embed;
+      transition: transform 0.2s;
+    }
+
+    .contact-email:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13.5px;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 10px;
+      }
+      .card, header {
+        padding: 20px 16px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .section-title {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div class="badge">Huawei AppGallery • Data Subject Rights & Data Deletion</div>
+      <h1>حقوق المستخدم وحذف البيانات</h1>
+      <div class="subtitle">User Data Rights & Data Deletion Policy — مدون الحسابات الذكي (Smart Account Ledger)</div>
+      <div class="nav-toggle">
+        <a href="#arabic">العربية</a>
+        <a href="#english">English</a>
+      </div>
+    </header>
+
+    <!-- Arabic Section -->
+    <article id="arabic" class="card">
+      <h2 class="section-title">
+        <span>📋</span>
+        <span>حقوق المستخدم وحذف البيانات – مدون الحسابات الذكي</span>
+      </h2>
+
+      <div class="highlight-box">
+        <strong>مبدأ الخصوصية الأساسي:</strong> أنت المالك الوحيد لبياناتك ولك كامل السيطرة عليها. تطبيق "مدون الحسابات الذكي" لا يحتفظ بأي سجلات أو بيانات مالية أو شخصية على خوادم تابعة للمطور؛ جميع بياناتك مسجلة ومخزنة محلياً على جهازك فقط.
+      </div>
+
+      <h2>1. السيطرة التامة وحق الوصول إلى البيانات:</h2>
+      <p>يملك المستخدم الحق الكامل في الوصول إلى جميع البيانات التي أدخلها داخل التطبيق في أي وقت دون قيود، وتشمل: أسماء العملاء، أرقام الهواتف، الحسابات، السجلات المالية، سندات القبض والصرف، المرفقات والصور، والتقارير المحاسبية، مباشرة من واجهات التطبيق.</p>
+
+      <h2>2. حق تعديل البيانات:</h2>
+      <p>يحق للمستخدم في أي وقت وبكل سهولة مراجعة وتعديل وتصحيح أي بيانات مسجلة داخل التطبيق، بما في ذلك بيانات العملاء وأرقامهم، وتفاصيل العمليات المالية، والعملات، والإعدادات، وتنعكس هذه التعديلات فورياً في قاعدة البيانات المحلية لجهازك.</p>
+
+      <h2>3. حق حذف البيانات (من داخل التطبيق):</h2>
+      <p>يمنح التطبيق المستخدم حق الحذف الفوري لأي جزء من بياناته عبر الخيارات المتاحة:</p>
+      <ul>
+        <li>حذف عمليات وسندات محددة أو تعديلها.</li>
+        <li>حذف حسابات عملاء أو موردين بالكامل مع جميع سجلاتهم المالية.</li>
+        <li>حذف المرفقات والصور المرتبطة بالسندات.</li>
+        <li>تصفير وحذف جميع البيانات والبدء من جديد عبر خيارات إدارة البيانات في التطبيق.</li>
+      </ul>
+
+      <h2>4. حذف البيانات عند إلغاء التثبيت أو مسح التخزين:</h2>
+      <p>نظراً لأن التطبيق يعمل بنظام التخزين المحلي الآمن (Local Storage):</p>
+      <ul>
+        <li>يؤدي مسح بيانات التطبيق من خلال <strong>(إعدادات الهاتف &gt; التطبيقات &gt; مدون الحسابات الذكي &gt; مسح البيانات / Clear Data)</strong> إلى حذف قاعدة البيانات المحلية بالكامل من ذاكرة الهاتف فوراً ودون رجعة.</li>
+        <li>يؤدي إلغاء تثبيت التطبيق (Uninstall) من هاتفك إلى مسح كافة البيانات المحلية المخزنة داخل مساحة التطبيق، ما لم تكن قد قمت بحفظ نسخة احتياطية خارجية سابقة.</li>
+      </ul>
+
+      <h2>5. النسخ الاحتياطي السحابي والخارجي (Google Drive وغيرها):</h2>
+      <p>النسخ الاحتياطي ميزة اختيارية بالكامل يتحكم بها المستخدم وحده:</p>
+      <ul>
+        <li>إذا قام المستخدم بربط حسابه في Google Drive وتفعيل النسخ الاحتياطي، تُرسل النسخة عبر اتصال مشفر (HTTPS) إلى مجلد خاص بالتطبيق في حساب المستخدم الشخصي فقط (Google Drive AppData).</li>
+        <li>المستخدم هو المالك الوحيد لهذه النسخ، ويمكنه حذف أي نسخة احتياطية سحابية في أي وقت مباشرة من شاشة النسخ الاحتياطي داخل التطبيق، أو عبر إدارة تطبيقات Google Drive في حسابه الشخصي.</li>
+        <li>لا يملك المطور أو أي طرف ثالث إمكانية الوصول إلى النسخ الاحتياطية الخاصة بك على Google Drive.</li>
+        <li>النسخ الاحتياطية المصدرة كملفات يدوية يتحكم المستخدم في حفظها أو حذفها من خلال مدير ملفات هاتفه في أي وقت.</li>
+      </ul>
+
+      <h2>6. عدم الحاجة لإنشاء حساب (No Registration):</h2>
+      <p>التطبيق يعمل بشكل مستقل وفوري <strong>دون الحاجة إطلاقاً لإنشاء حساب مستخدم</strong> أو تسجيل اسم مستخدم أو كلمة مرور على أي سيرفر خارجي لاستخدام كافة الوظائف المحاسبية الأساسية.</p>
+
+      <h2>7. عدم جمع الموقع الجغرافي:</h2>
+      <p>نؤكد أن تطبيق "مدون الحسابات الذكي" <strong>لا يطلب ولا يجمع ولا يتبع الموقع الجغرافي (GPS / Location)</strong> للمستخدم نهائياً، ولا يتضمن أي أكواد برمجية لتحديد المواقع.</p>
+
+      <h2>8. الغرض من البيانات وعدم بيعها (No Sale of Data):</h2>
+      <div class="success-box">
+        البيانات المالية وأسماء العملاء وجهات الاتصال والمستندات والصور التي يدخلها المستخدم تُستخدم <strong>فقط وحصرياً لتنفيذ وظائف التطبيق المحاسبية</strong> وإعداد التقارير والسندات على هاتفك. <strong>نحن لا نبيع ولا نؤجر ولا نشارك أي بيانات للمستخدمين مع أي طرف ثالث أو شبكات إعلانية على الإطلاق.</strong>
+      </div>
+
+      <!-- Contact Box Arabic -->
+      <div class="contact-card">
+        <h3>طلب المساعدة أو ممارسة حقوقك (Data Subject Requests)</h3>
+        <p>إذا كانت لديك أي استفسارات تتعلق بخصوصيتك، أو ترغب في الاستفسار عن كيفية إدارة وحذف بياناتك، أو ممارسة أي حق من حقوقك كصاحب بيانات، يمكنك التواصل مباشرة مع المطور:</p>
+        <a class="contact-email" href="mailto:AhmedAlshapoty@gmail.com">AhmedAlshapoty@gmail.com</a>
+      </div>
+    </article>
+
+    <!-- English Section -->
+    <article id="english" class="card ltr-block">
+      <h2 class="section-title">
+        <span>🛡️</span>
+        <span>User Data Rights & Data Deletion — Smart Account Ledger</span>
+      </h2>
+
+      <div class="highlight-box">
+        <strong>Core Privacy Principle:</strong> You own and control your data. "Smart Account Ledger" does not store your records, financial transactions, or customer information on any developer-operated servers. All your data is stored locally and securely on your own device.
+      </div>
+
+      <h2>1. Full Ownership and Right of Access:</h2>
+      <p>You have the full right to access all information entered into the application at any time, including customer names, phone numbers, accounts, debits, credits, receipt/payment vouchers, attachments, and financial reports, directly through the application's user interface.</p>
+
+      <h2>2. Right to Rectification (Edit Data):</h2>
+      <p>You have the right to modify, correct, and update any customer details, transaction amounts, dates, notes, currencies, and settings at any time directly in the app. Updates are instantly committed to your local device database.</p>
+
+      <h2>3. Right to Erasure / Deletion (Within the App):</h2>
+      <p>The application provides direct controls to delete your data whenever you choose:</p>
+      <ul>
+        <li>Delete individual transactions, receipts, and vouchers.</li>
+        <li>Delete customer or supplier accounts along with their associated transaction history.</li>
+        <li>Delete attached receipt images and document files.</li>
+        <li>Wipe all app data and restart from scratch using the in-app database management tools.</li>
+      </ul>
+
+      <h2>4. Data Deletion via Device Settings or App Uninstall:</h2>
+      <p>Because the app relies on local device storage:</p>
+      <ul>
+        <li>Clearing the app storage via your phone settings <strong>(Settings &gt; Apps &gt; Smart Account Ledger &gt; Storage &gt; Clear Data)</strong> permanently removes the local database and all associated local files immediately.</li>
+        <li>Uninstalling the app from your device automatically deletes all local data stored within the app's sandboxed storage space, unless you have created an external backup.</li>
+      </ul>
+
+      <h2>5. External & Cloud Backups (Google Drive and Local Backups):</h2>
+      <p>Cloud and external backups are completely optional and under your exclusive control:</p>
+      <ul>
+        <li>If you choose to link Google Drive and enable cloud backup, backup files are transmitted over secure HTTPS directly to the app's private folder in your personal Google account (Google Drive AppData folder).</li>
+        <li>You remain the sole owner of these backups. You can delete any cloud backup at any time directly through the Google Drive screen in the app, or from your Google account settings.</li>
+        <li>Neither the developer nor any third party has access to your Google Drive backup files.</li>
+        <li>Manually exported database or PDF/Excel backup files can be managed or permanently deleted by you at any time via your device's file manager.</li>
+      </ul>
+
+      <h2>6. No Account Registration Required:</h2>
+      <p>The application operates fully offline and independently for all its core accounting features. <strong>No user registration, account creation, email sign-up, or login credentials are required</strong> on external servers to use the app.</p>
+
+      <h2>7. No Location Data Collection:</h2>
+      <p>"Smart Account Ledger" <strong>does not request, collect, monitor, or track your physical GPS or geographical location</strong> in any form.</p>
+
+      <h2>8. Purpose Specification & No Sale of Data:</h2>
+      <div class="success-box">
+        All financial records, customer details, contacts chosen via the picker, and attached document images are used <strong>strictly and exclusively to deliver the app's accounting and reporting functions</strong> on your device. <strong>We do not sell, rent, monetize, or trade your personal or financial data with any third parties or advertising networks.</strong>
+      </div>
+
+      <!-- Contact Box English -->
+      <div class="contact-card">
+        <h3>Contact / Exercise Your Rights</h3>
+        <p>If you have any questions regarding your privacy, wish to make an inquiry about managing or deleting your data, or want to exercise your data subject rights, please contact the developer directly at:</p>
+        <a class="contact-email" href="mailto:AhmedAlshapoty@gmail.com">AhmedAlshapoty@gmail.com</a>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+      مدون الحسابات الذكي • Smart Account Ledger &copy; 2026. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>
